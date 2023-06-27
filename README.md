@@ -52,20 +52,6 @@ When we compare the clustered eigenfunctions against the initial K-Means cluster
 </figure>
 
 
-<div class="row">
-  <div class="column">
-    <img src = "17_5_Cluster8_2.png" 
-      width="400"  />
-  </div>
-  <div class="column">
-    <img src = "Cluster8_2.png" 
-      width="400"  />
-  </div>
-<figcaption> <em>Figure</em>. <b>Left</b>: The eight Koopman eigenfunctions clustered using K-Means. <b>Right</b>: The original GPS data clustered using K-Means clustering. </figcaption>
-</div>
-
-
-
 ___
 <h2 style="text-align: center;"> Transition Probabilities </h2>
 
