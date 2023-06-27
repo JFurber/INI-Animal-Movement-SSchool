@@ -1,6 +1,7 @@
 &nbsp;
 
-<h1 style="text-align: center;"> Math's PGR Conference 2023 </h1>
+<h1 style="text-align: center;"> Isaac Newton Institute </h1>
+<h1 style="text-align: center;"> Summer School on Mathematics of Movement </h1>
 
 <h2 style="text-align: center;"> Abstract </h2>
 
