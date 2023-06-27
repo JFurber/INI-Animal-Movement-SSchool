@@ -2,11 +2,6 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: page
-feature_image: "https://elliottsullingefarrall.github.io/_/assets/cover1.webp"
-redirect_from:
-  - /
----
 
 #### About Me
 
@@ -15,16 +10,12 @@ I am a PhD student in the Department of Mathematics at the University of Surrey.
 - How topological properties of boundary data plays a role in local minimisation of functionals.
 - The impact of incompressibility type constraints on the minimisation of functionals and how this transforms convex to polyconvex problems.
 
-Further details about some of my current work are available to read [here](/assets/confirmation.pdf).
 
 Below are some recent presentations of my research, along with a list of academic and funding awards that I have recieved.
 
 #### Presentations
 
-- SIAM Student Chapter Conference, Oxford, [Poster]({{ site.baseurl }}/poster1) (06/2023).
-- PGR Student Seminar, Surrey, [Talk](/assets/seminar.pdf) (05/2023).
-- Internal Student Conference, Surrey, [Poster]({{ site.baseurl }}/poster1) (03/2023).
-- Taste of Research for Undergraduate Students, [Talk](/assets/torus.pdf) (03/2023).
+
 
 #### Awards
 
