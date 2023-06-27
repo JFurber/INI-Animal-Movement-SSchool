@@ -26,6 +26,14 @@ The animation is plotted every two iterations to show a smoother movement of the
 </p>
 
 ---
+<h2 style="text-align: center;"> Extended Dynamic Mode Decomposition </h2>
+
+
+___
+<h2 style="text-align: center;"> Transition Probabilities </h2>
+
+
+___
 
 <h2 style="text-align: center;"> Bibliography </h2>
 
