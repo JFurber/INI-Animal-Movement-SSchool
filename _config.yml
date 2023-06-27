@@ -1,4 +1,4 @@
-remote_theme: jekyll-theme-cayman
+remote_theme: mmistakes/minimal-mistakes@main
 
 # Site configuration
 # 1. Files excluded from Jekyll builds
