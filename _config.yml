@@ -1,4 +1,4 @@
-remote_theme: mmistakes/minimal-mistakes@main
+# remote_theme: mmistakes/minimal-mistakes@main
 
 # Site configuration
 # 1. Files excluded from Jekyll builds
@@ -21,7 +21,7 @@ exclude:
 - CNAME
 - Gemfile
 - Gemfile.lock
-- alembic-jekyll-theme.gemspec
+# - alembic-jekyll-theme.gemspec
 - .jekyll-cache
 
 # 2. Installed Gems
