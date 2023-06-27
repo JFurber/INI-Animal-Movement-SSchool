@@ -28,19 +28,27 @@ The animation is plotted every two iterations to show a smoother movement of the
 ---
 <h2 style="text-align: center;"> Extended Dynamic Mode Decomposition </h2>
 
+This section compliments the box on Extended Dynamic Mode Decomposition (EDMD). Featured below are the first eight Koopman eigenfunctions that correspond to the first eigenvalues seen in Figure 4. 
 
-
-
+<figure>
 <p align="center">
 <img src="Woodchester_EDMD_K_Eigenfunctions.png">
 </p>
+      <figcaption> <em>Figure</em>. The first eight eigenfunctions corresponding to the first eight eigenvalues seen in Figure 4. The first eigenfunction (Eigenfunction 0) is constant, as expected. The second eigenfunction (Eigenfunction 1) highlights there are very few transitions between the bottom and the top of the park. The following eigefunctions highlight where the next energy barriers are within the park. </figcaption>
+</figure>
 
+When we compare the clustered eigenfunctions against the initial K-Means clustering of the data we see that they are very similar.
 
-
+<figure>
 <p align="center">
-<img src = "Woodchester_EDMD_K_KMeans8.png" 
+<img src = "17_5_Cluster8_2.png" 
       width="400"  />
+<img src = "Cluster8_2.png" 
+      width="400"  />
+      <figcaption> <em>Figure</em>. <b>Left</b>: The eight Koopman eigenfunctions clustered using K-Means. <b>Right</b>: The original GPS data clustered using K-Means clustering. </figcaption>
 </p>
+</figure>
+
 
 
 ___
