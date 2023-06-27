@@ -28,7 +28,11 @@ The animation is plotted every two iterations to show a smoother movement of the
 ---
 <h2 style="text-align: center;"> Extended Dynamic Mode Decomposition </h2>
 
-This section compliments the box on Extended Dynamic Mode Decomposition (EDMD). Featured below are the first eight Koopman eigenfunctions that correspond to the first eigenvalues seen in Figure 4. 
+<p> This section compliments the box on Extended Dynamic Mode Decomposition (EDMD). For information on EDMD and algorithm, see references [5] and [7]. In essence,the eigenvalues and eigenfunctions of the Koopman Operator capture the long-term dynamics of the observables (for example the coordinates) of the dynamical system. EDMD is used to compute an approximation for the Koopman Operator directly. Then, we analyze the Koopman operator via its spectrum. </p>
+
+<p> One requirement for using EDMD is uniformly spaced time intervals. Due to the nature of the GPS collection, unfortunately, we do not have uniform time intervals. We overcome this by interpolating the data. Here, we assume that the badgers are moving in a linear fashion between coordinates, and they are moving the same speed. We need to find a lag time so the space is not too small that we lose the dynamics, and not too large that we are unable to see the dynamics. For example, if we interpolate so we have 2-minute intervals, then we are literally assuming the badgers are moving in a straight line between points A and B. Yet, by reference [6] it is proved by <i> dead reckoning </i> that badgers do not take a linear route. If we use 35-minute intervals, then we are unable to see anything in the results. Hence, we interpolate the data for every 17.5 minutes. Whilst this is assuming we know the position halfway, it gives more ‘freedom’ for the badger between each point. </p>
+
+<p> The results using the 17.5 minute interpolated data are presented. The eigenvalues can be seen in Figure 4, and the first eight eigenfunctions that correspond to the first eight eigenvalues are seen below. The eigenfunctions depict where there are energy barriers within the park (i.e. where there are few transitions between areas). </p>
 
 <figure>
 <p align="center">
@@ -39,7 +43,7 @@ This section compliments the box on Extended Dynamic Mode Decomposition (EDMD). 
 
 &emsp;
 
-When we compare the clustered eigenfunctions against the initial K-Means clustering of the data we see that they are very similar.
+<p> When we compare the clustered eigenfunctions against the initial K-Means clustering of the data we see that the clustering are very similar. (Using optimisation tools, it was shown that eight is the optimal amount of clusters for the data set). One benefit of using EDMD over similar K-Means clustering of the data, is that EDMD is looking at the dynamics of the system. Whereas K-Means clustering is looking at the Euclidean distance of points to a centroid mean. From this perspective, EDMD is a better representation of the clusters. Yet, the disadvantage is that the data does need to be interpolated to use the method. Nevertheless, through the use of EDMD we are able to see the natual clusters of the park and where the main territories of the badgers lie. </p>
 
 <figure>
 <p align="center">
