@@ -28,6 +28,13 @@ The animation is plotted every two iterations to show a smoother movement of the
 ---
 <h2 style="text-align: center;"> Extended Dynamic Mode Decomposition </h2>
 
+<p align="center">
+<img src="Woodchester_EDND_K_KMeans8.png">
+</p>
+
+<p align="center">
+<img src="Woodchester_EDND_K_Eigenfunctions.png">
+</p>
 
 ___
 <h2 style="text-align: center;"> Transition Probabilities </h2>
