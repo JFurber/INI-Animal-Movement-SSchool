@@ -37,17 +37,32 @@ This section compliments the box on Extended Dynamic Mode Decomposition (EDMD). 
       <figcaption> <em>Figure</em>. The first eight eigenfunctions corresponding to the first eight eigenvalues seen in Figure 4. The first eigenfunction (Eigenfunction 0) is constant, as expected. The second eigenfunction (Eigenfunction 1) highlights there are very few transitions between the bottom and the top of the park. The following eigefunctions highlight where the next energy barriers are within the park. </figcaption>
 </figure>
 
+&emsp;
+
 When we compare the clustered eigenfunctions against the initial K-Means clustering of the data we see that they are very similar.
 
 <figure>
 <p align="center">
 <img src = "17_5_Cluster8_2.png" 
-      width="400"  />
+      width="350"  />
 <img src = "Cluster8_2.png" 
-      width="400"  />
+      width="350"  />
       <figcaption> <em>Figure</em>. <b>Left</b>: The eight Koopman eigenfunctions clustered using K-Means. <b>Right</b>: The original GPS data clustered using K-Means clustering. </figcaption>
 </p>
 </figure>
+
+
+<div class="row">
+  <div class="column">
+    <img src = "17_5_Cluster8_2.png" 
+      width="400"  />
+  </div>
+  <div class="column">
+    <img src = "Cluster8_2.png" 
+      width="400"  />
+  </div>
+<figcaption> <em>Figure</em>. <b>Left</b>: The eight Koopman eigenfunctions clustered using K-Means. <b>Right</b>: The original GPS data clustered using K-Means clustering. </figcaption>
+</div>
 
 
 
