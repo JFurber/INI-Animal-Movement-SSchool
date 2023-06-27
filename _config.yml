@@ -55,9 +55,9 @@ email: "j.furber@surrey.ac.uk"
 css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
 # 9. Site navigation
-navigation_header:
-- title: Home
-  url: /
+# navigation_header:
+# - title: Home
+#   url: /
 # - title: Experience
   # url: experience/
 
