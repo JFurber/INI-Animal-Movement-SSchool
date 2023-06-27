@@ -59,7 +59,19 @@ The animation is plotted every two iterations to show a smoother movement of the
 ___
 <h2 style="text-align: center;"> Transition Probabilities </h2>
 
+<p> Using the clusters generated with EDMD, we allocate each coordinate (from the 17.5 minute interpolated data) a cluster. Then, we are able to calculate the transition at each time point. There are eight clusters in total, and we add a ninth state. This state is when the badgers no longer have GPS data, so in essence is a ‘removed’ state from the data. There is no returning to the park once they are in this state, which is why in Figure 5 there are no return arrows to any of the states. The transition matrix corresponding to Figure 5 is seen below. State 1 starts on the far left and moves up and around the park clockwise, until it reaches the crossing to go to the bottom of the park. As is can be seen, there are very strong probabilities of staying in the original cluster at the next time point, with few transitions to the cluster ‘next door’. There are no jumps across the park in a single time step. This was to be expected as the clusters are made up of multiple territories. Hence, showing that the badgers stay generally amongst multiple territories in their cluster, rather than wandering to others. This could have implications if wanting to control the spread of bovine Tuberculosis. </p>
 
+$$ \begin{pmatrix}
+0.970600858 & 0.008583691 & 0 & 0 & 0 & 0 & 0.019527897 & 0 & 0.001287554 \\
+0.002541296 & 0.988193562 & 0.00259424 & 0 & 0 & 0 & 0.005664972 & 0 & 0.00100593 \\
+0 & 0.008511409 & 0.96957624 & 0.015030786 & 0 & 0.002897501 & 0.002716407 & 0 & 0.001267657 \\
+0 & 0 & 0.004845688 & 0.989789443 & 0.003749639 & 0.000519181 & 0 & 0 & 0.001096048 \\
+0 & 0 & 0 & 0.003072474 & 0.987167902 & 0.009036689 & 0 & 0 & 0.000722935 \\
+0 & 0 & 0.001585571 & 0.000594589 & 0.020017838 & 0.970468735 & 0.006044991 & 0 & 0.001288277 \\
+0.013837946 & 0.01933978 & 0.002667556 & 0 & 0 & 0.010003334 & 0.952484161 & 0.000166722 & 0.0015005 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0.000695894 & 0.997912317 & 0.001391788 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 
+\end{pmatrix}  $$
 ___
 
 <h2 style="text-align: center;"> Bibliography </h2>
