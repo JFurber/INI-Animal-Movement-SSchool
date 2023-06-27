@@ -47,10 +47,10 @@ timezone: Europe/London # Timezone for blog posts and alike
 # 7. Site settings
 encoding: utf-8 
 lang: en-GB 
-title: "Elliott Sullinge-Farrall"
-description: "Personal Website"
+title: "Spending an Energy for a Reward: Understanding the Fine Movements of Badgers"
+description: "Isacc Newton Institute: Summer School"
 # repo: "https://github.com/ElliottSullingeFarrall/_"
-# email: "elliott.chalford@gmail.com"
+email: "j.furber@surrey.ac.uk"
 
 css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
