@@ -76,8 +76,8 @@ ___
 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 
 \end{pmatrix}  \]
 
-<p> </p>
-___
+
+<hr>
 
 <h2 style="text-align: center;"> Bibliography </h2>
 
