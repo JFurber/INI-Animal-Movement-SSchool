@@ -77,7 +77,6 @@ $$ \begin{pmatrix}
 \end{pmatrix}  $$
 
 
-<hr>
 
 <h2 style="text-align: center;"> Bibliography </h2>
 
