@@ -64,7 +64,7 @@ ___
 
 <p> Using the clusters generated with EDMD, we allocate each coordinate (from the 17.5 minute interpolated data) a cluster. Then, we are able to calculate the transition at each time point. There are eight clusters in total, and we add a ninth state. This state is when the badgers no longer have GPS data, so in essence is a ‘removed’ state from the data. There is no returning to the park once they are in this state, which is why in Figure 5 there are no return arrows to any of the states. The transition matrix corresponding to Figure 5 is seen below. State 1 starts on the far left and moves up and around the park clockwise, until it reaches the crossing to go to the bottom of the park. As is can be seen, there are very strong probabilities of staying in the original cluster at the next time point, with few transitions to the cluster ‘next door’. There are no jumps across the park in a single time step. This was to be expected as the clusters are made up of multiple territories. Hence, showing that the badgers stay generally amongst multiple territories in their cluster, rather than wandering to others. This could have implications if wanting to control the spread of bovine Tuberculosis. </p>
 
-$$ \begin{pmatrix}
+\[ \begin{pmatrix}
 0.9706 & 0.0086 & 0 & 0 & 0 & 0 & 0.0195 & 0 & 0.0013 \\
 0.0025 & 0.9882 & 0.0026 & 0 & 0 & 0 & 0.0057 & 0 & 0.0010\\
 0 & 0.0085 & 0.9696 & 0.0150 & 0 & 0.0029 & 0.0027 & 0 & 0.00127 \\
@@ -74,7 +74,9 @@ $$ \begin{pmatrix}
 0.0138 & 0.0193 & 0.0027 & 0 & 0 & 0.0100 & 0.9525 & 0.0002 & 0.00150 \\
 0 & 0 & 0 & 0 & 0 & 0 & 0.0007 & 0.9979 & 0.0014 \\
 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 
-\end{pmatrix}  $$
+\end{pmatrix}  \]
+
+<p> </p>
 ___
 
 <h2 style="text-align: center;"> Bibliography </h2>
