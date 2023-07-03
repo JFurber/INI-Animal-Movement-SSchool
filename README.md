@@ -46,7 +46,7 @@ The animation is plotted every two iterations to show a smoother movement of the
 
 &emsp;
 
-<p> When we compare the clustered eigenfunctions against the initial K-Means clustering of the data we see that the clustering are very similar. (Using optimisation tools, it was shown that eight is the optimal amount of clusters for the data set). One benefit of using EDMD over similar K-Means clustering of the data, is that EDMD is looking at the dynamics of the system. Whereas K-Means clustering is looking at the Euclidean distance of points to a centroid mean. From this perspective, EDMD is a better representation of the clusters. Yet, the disadvantage is that the data does need to be interpolated to use the method. Nevertheless, through the use of EDMD we are able to see the natual clusters of the park and where the main territories of the badgers lie. </p>
+<p> When we compare the clustered eigenfunctions against the initial k-means clustering of the data we see that the clustering are very similar. (Using optimisation tools, it was shown that eight is the optimal amount of clusters for the data set). One benefit of using EDMD over similar k-means clustering of the data, is that EDMD is looking at the dynamics of the system. Whereas k-means clustering is looking at the Euclidean distance of points to a centroid mean. From this perspective, EDMD is a better representation of the clusters. Yet, the disadvantage is that the data does need to be interpolated to use the method. Nevertheless, through the use of EDMD we are able to see the natual clusters of the park lie. </p>
 
 <figure>
 <p align="center">
@@ -54,7 +54,7 @@ The animation is plotted every two iterations to show a smoother movement of the
       width="350"  />
 <img src = "Cluster8_2.png" 
       width="350"  />
-      <figcaption> <em>Figure</em>. <b>Left</b>: The eight Koopman eigenfunctions clustered using K-Means. <b>Right</b>: The original GPS data clustered using K-Means clustering. </figcaption>
+      <figcaption> <em>Figure</em>. <b>Left</b>: The eight Koopman eigenfunctions clustered using k-means. <b>Right</b>: The original GPS data clustered using k-means clustering. </figcaption>
 </p>
 </figure>
 
@@ -62,7 +62,9 @@ The animation is plotted every two iterations to show a smoother movement of the
 ___
 <h2 style="text-align: center;"> Transition Probabilities </h2>
 
-<p> Using the clusters generated with EDMD, we allocate each coordinate (from the 17.5 minute interpolated data) a cluster. Then, we are able to calculate the transition at each time point. There are eight clusters in total, and we add a ninth state. This state is when the badgers no longer have GPS data, so in essence is a ‘removed’ state from the data. There is no returning to the park once they are in this state, which is why in Figure 5 there are no return arrows to any of the states. The transition matrix corresponding to Figure 5 is seen below. State 1 starts on the far left and moves up and around the park clockwise, until it reaches the crossing to go to the bottom of the park. As is can be seen, there are very strong probabilities of staying in the original cluster at the next time point, with few transitions to the cluster ‘next door’. There are no jumps across the park in a single time step. This was to be expected as the clusters are made up of multiple territories. Hence, showing that the badgers stay generally amongst multiple territories in their cluster, rather than wandering to others. This could have implications if wanting to control the spread of bovine Tuberculosis. </p>
+<p> Using the clusters generated with EDMD, we allocate each coordinate (from the 17.5 minute interpolated data) a cluster. Then, we are able to calculate the transition at each time point. There are eight clusters in total, and we add a ninth state. This state is when the badgers no longer have GPS data, so in essence is a ‘removed’ state from the data. There is no returning to the park once they are in this state, which is why in Figure 5 there are no return arrows to any of the states. 
+      
+The transition matrix corresponding to Figure 5 is seen below. State 1 starts on the far left and moves up and around the park clockwise, until it reaches the crossing to go to the bottom of the park. As is can be seen, there are very strong probabilities of staying in the original cluster at the next time point, with few transitions to the adjacent cluster. There are no jumps across the park in a single time step. This was to be expected as the clusters are made up of multiple territories, where Figure 1 highlights the territories that were seen within the park in 2018. In 2018, there were 31 territories within the park (although 3 without data in them due to logistics of catching the badgers), however, these can change over time. For instance, boundaries can move and teritories can merge due to the death of a senior/leader badger. The clusters that have been calculated incorporate multiple territories into a single cluster, showing that the badgers stay generally amongst multiple territories, rather than wandering to others. This could have implications if wanting to control the spread of bovine Tuberculosis. </p>
 
 $$ \begin{pmatrix}
 0.9706 & 0.0086 & 0 & 0 & 0 & 0 & 0.0195 & 0 & 0.0013 \\
