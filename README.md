@@ -35,6 +35,16 @@ The animation is plotted every two iterations to show a smoother movement of the
 
 <p> One requirement for using EDMD is uniformly spaced time intervals. Due to the nature of the GPS collection, unfortunately, we do not have uniform time intervals. We overcome this by interpolating the data. Here, we assume that the badgers are moving in a linear fashion between coordinates, and they are moving the same speed. We need to find a lag time so the space is not too small that we lose the dynamics, and not too large that we are unable to see the dynamics. For example, if we interpolate so we have 2-minute intervals, then we are literally assuming the badgers are moving in a straight line between points A and B. Yet, by reference [6] it is proved by <i> dead reckoning </i> that badgers do not take a linear route. If we use 35-minute intervals, then we are unable to see anything in the results. Hence, we interpolate the data for every 17.5 minutes. Whilst this is assuming we know the position halfway, it gives more ‘freedom’ for the badger between each point. </p>
 
+<figure>
+<p align="center">
+<img src = "WoodchesterInterp.png" 
+      width="350"  />
+<img src = "DeadReckoning.png" 
+      width="350"  />
+      <figcaption> <em>Figure</em>. <b>Left</b>: Investigation into interpolating the data for different choices. <b>Right</b>: Figure 3 from [6]. Dead reckoned data of a single badger's movement. </figcaption>
+</p>
+</figure>
+
 <p> The results using the 17.5 minute interpolated data are presented. The eigenvalues can be seen in Figure 4, and the first eight eigenfunctions that correspond to the first eight eigenvalues are seen below. The eigenfunctions depict where there are energy barriers within the park (i.e. where there are few transitions between areas). </p>
 
 <figure>
